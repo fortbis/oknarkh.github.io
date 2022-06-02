@@ -1,0 +1,352 @@
+/**
+ *
+ *
+ */
+/* -- SCREEN Media queries -- */
+/* -- COLORS -- */
+/* -- END COLORS -- */
+/* -- IMG PATH -- */
+/* -- END IMG PATH -- */
+/* -- BASE PROJECT FONT SETTINGS -- */
+/* -- END BASE PROJECT FONT SETTINGS -- */
+/* -- ICONS CODE TO PSEUDO-ELEMENTS -- */
+/* -- END ICONS CODE TO PSEUDO-ELEMENTS -- */
+/* -- ANIMATION STYLE -- */
+/* -- END ANIMATION STYLE -- */
+/* -- PRIMARY MIXIN -- */
+/*.transform(...) {
+	transform: @arguments translateZ(0);
+	-ms-transform: @arguments translateZ(0);
+	-webkit-transform: @arguments translateZ(0);
+}*/
+/* -- END PRIMARY MIXIN -- */
+/* -- SPECIFIC MIXIN -- */
+/*-- Light bg typography styles
+-----------------------------*/
+/*---------------------------*/
+/* -- END SPECIFIC MIXIN -- */
+.ul-pubwindow-content-wrapper {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content {
+  background: #132026;
+  position: relative;
+  width: 100%;
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content .ul-pubwindow-content-title {
+  color: #DAE1E6;
+  font-family: 'Avenir Next';
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.714;
+  letter-spacing: 3px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content .ul-pubwindow-content-desc {
+  color: #8DA8B8;
+  font-family: 'Avenir Next';
+  font-size: 14px;
+  margin-top: 1px;
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content .ul-pubwindow-content-premium {
+  color: #DAE1E6;
+  font-family: 'Avenir Next W10 Regular';
+  font-size: 14px;
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content .ul-pubwindow-content-premium .ul-to-all-tariffs {
+  position: relative;
+  padding: 0 150px 0 0;
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content .ul-pubwindow-content-premium .ul-to-all-tariffs .ul-button {
+  margin-top: -18px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content .ul-pubwindow-content-premium .ul-pw-premium-cards {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  margin: 15px 0 11px;
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content .ul-pubwindow-content-premium .ul-pw-premium-cards .ul-pw-premium-card {
+  background: #132026;
+  border: 2px solid rgba(38, 56, 69, 0.7);
+  text-align: center;
+  padding: 10px 0 78px;
+  width: 200px;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition-property: background;
+  transition-property: background;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content .ul-pubwindow-content-premium .ul-pw-premium-cards .ul-pw-premium-card:hover {
+  background: #182930;
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content .ul-pubwindow-content-premium .ul-pw-premium-cards .ul-pw-premium-card .ul-pw-premium-card-price {
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  font-family: 'Avenir Next Thin';
+  font-size: 68px;
+  display: inline-block;
+  margin-top: 20px;
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content .ul-pubwindow-content-premium .ul-pw-premium-cards .ul-pw-premium-card .ul-pw-premium-card-price:before {
+  content: attr(data-dol);
+  font-size: 27px;
+  color: #8DA8B8;
+  position: absolute;
+  top: 4px;
+  left: -22px;
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content .ul-pubwindow-content-premium .ul-pw-premium-cards .ul-pw-premium-card .ul-pw-premium-card-price:after {
+  content: attr(data-period);
+  color: #8DA8B8;
+  font-size: 14px;
+  font-family: 'Avenir Next';
+  margin-left: 8px;
+  position: absolute;
+  bottom: 20px;
+  left: 100%;
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content .ul-pubwindow-content-premium .ul-pw-premium-cards .ul-pw-premium-card .ul-pw-premium-card-price span {
+  font-family: 'Avenir Next W10 Regular';
+  font-size: 24px;
+  position: absolute;
+  left: 100%;
+  top: 16px;
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content .ul-pubwindow-content-premium .ul-pw-premium-cards .ul-pw-premium-card .ul-pw-premium-card-desc {
+  color: #8DA8B8;
+  padding: 0 20px;
+  line-height: 18px;
+  margin-top: -3px;
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content .ul-pubwindow-content-premium .ul-pw-premium-cards .ul-pw-premium-card .ul-pw-premium-card-title {
+  padding: 0 20px;
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content .ul-pubwindow-content-premium .ul-pw-premium-cards .ul-pw-premium-card .ul-pw-premium-card-button {
+  width: 160px;
+  position: absolute;
+  left: 18px;
+  bottom: 30px;
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content .ul-pubwindow-content-premium .ul-pw-premium-cards.large-value .ul-pw-premium-card-price {
+  font-size: 50px;
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content .ul-pubwindow-content-premium .ul-pw-premium-cards.large-value .ul-pw-premium-card-price:before {
+  top: 0;
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content .ul-pubwindow-content-premium .ul-pw-premium-cards.large-value .ul-pw-premium-card-price:after {
+  bottom: 12px;
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content .ul-pubwindow-content-premium .ul-pw-premium-cards.large-value .ul-pw-premium-card-price span {
+  font-size: 20px;
+  top: 10px;
+  margin-left: 4px;
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content .ul-pubwindow-content-social .ul-pw-social-btns {
+  color: #DAE1E6;
+  font-family: 'Avenir Next';
+  font-size: 14px;
+  margin-top: 15px;
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content .ul-pubwindow-content-social .ul-pw-social-btns .ul-pw-social-btn {
+  border: 2px solid #1F313C;
+  border-top: none;
+  margin: 0;
+  padding: 13px 18px 9px;
+  height: 48px;
+  display: block;
+  color: #DAE1E6;
+  text-decoration: none !important;
+  position: relative;
+  -webkit-transition-property: background, color;
+  transition-property: background, color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content .ul-pubwindow-content-social .ul-pw-social-btns .ul-pw-social-btn:after {
+  content: "";
+  background: red;
+  position: absolute;
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content .ul-pubwindow-content-social .ul-pw-social-btns .ul-pw-social-btn:first-child {
+  border-top: 2px solid #1F313C;
+  border-radius: 6px 6px 0 0;
+  height: 50px;
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content .ul-pubwindow-content-social .ul-pw-social-btns .ul-pw-social-btn:first-child .social-bg {
+  border-radius: 6px 6px 0 0;
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content .ul-pubwindow-content-social .ul-pw-social-btns .ul-pw-social-btn:last-child {
+  border-radius: 0 0 6px 6px;
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content .ul-pubwindow-content-social .ul-pw-social-btns .ul-pw-social-btn:last-child .social-bg {
+  border-radius: 0 0 6px 6px;
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content .ul-pubwindow-content-social .ul-pw-social-btns .ul-pw-social-btn .social-icon {
+  color: #8EADCD;
+  margin-right: 14px;
+  margin-top: -2px;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content .ul-pubwindow-content-social .ul-pw-social-btns .ul-pw-social-btn .social-bg {
+  background: transparent;
+  height: 48px;
+  width: 420px;
+  margin-top: -36px;
+  margin-left: -20px;
+  display: block;
+  -webkit-transition-property: background;
+  transition-property: background;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content .ul-pubwindow-content-social .ul-pw-social-btns .ul-pw-social-btn:hover {
+  color: #FFFFFF;
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content .ul-pubwindow-content-social .ul-pw-social-btns .ul-pw-social-btn:hover .social-icon {
+  color: #FFFFFF;
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content .ul-pubwindow-content-social .ul-pw-social-btns .ul-pw-social-btn:hover[type="vk"] .social-bg {
+  background: #577ea5;
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content .ul-pubwindow-content-social .ul-pw-social-btns .ul-pw-social-btn:hover[type="fb"] .social-bg {
+  background: #395a9b;
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content .ul-pubwindow-content-social .ul-pw-social-btns .ul-pw-social-btn:hover[type="tw"] .social-bg {
+  background: #00a2f6;
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content .ul-pubwindow-content-domain .ul-pubwindow-domain-input {
+  margin-top: 15px;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: space-around;
+  -ms-flex-line-pack: distribute;
+  align-content: space-around;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content .ul-pubwindow-content-domain .ul-pubwindow-domain-input input {
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  background: #132026;
+  border: 2px solid #4caf50;
+  font-family: 'Avenir Next W10 Regular';
+  font-size: 17px;
+  font-weight: normal;
+  height: 54px;
+  border-radius: 5px;
+  padding: 0 16px;
+  color: #FFFFFF;
+  outline: none !important;
+  z-index: 1;
+  -webkit-transition-property: border, background;
+  transition-property: border, background;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content .ul-pubwindow-content-domain .ul-pubwindow-domain-input input:hover {
+  background: #182930;
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content .ul-pubwindow-content-domain .ul-pubwindow-domain-input span {
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  background: #4caf50;
+  color: #FFFFFF;
+  cursor: pointer;
+  height: 54px;
+  padding: 18px 30px;
+  border-radius: 0 5px 5px 0;
+  box-shadow: -5px 0 0 0 #4caf50;
+  -webkit-transition-property: background;
+  transition-property: background;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content .ul-pubwindow-content-domain .ul-pubwindow-domain-input span:hover {
+  background: #6ec071;
+  box-shadow: -5px 0 0 0 #6ec071;
+}
+.ul-pubwindow-content-wrapper .ul-pubwindow-content .ul-pubwindow-content-domain .ul-pubwindow-domain-input span:hover + input {
+  border: 2px solid #6ec071;
+}
